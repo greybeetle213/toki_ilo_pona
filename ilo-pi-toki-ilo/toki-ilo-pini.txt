@@ -1,0 +1,7 @@
+}catch(err){
+    errorDisplayer(err)
+}
+window.removeEventListener("error", (event) => {
+    testError = event
+});   
+}

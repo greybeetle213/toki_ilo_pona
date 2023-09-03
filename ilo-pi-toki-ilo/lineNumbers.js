@@ -1,0 +1,2 @@
+lineNumbers$ = [[0, 'nanpapona  li   nasin[tan:]  wan'], [1, 'pokipitokiilo  :sike  la'], [2, 'kule  lukatutu  lukatutu  lukatutu'], [3, 'leko  ala  ala  tuali  tuali'], [4, 'kule  ala  ala  ala'], [5, 'nena  te  nanpawan  to  la'], [6, 'sitelen  te  ijo/sikeutala.png  to  mute  mute'], [7, 'pini'], [8, 'pini  toki:  ni lipalianuseme']]
+startLineNum = 3
