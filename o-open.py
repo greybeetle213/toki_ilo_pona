@@ -388,24 +388,24 @@ for line_number, line in enumerate(tokiilo):
                     raise Exception("pakala li lon toki nanpa "+Base10ToTokiPona(line_number)+"!\n"+"  ".join(line)+"\nni li ken poki taso: "+line[0])
                 for i in range(0,len(tokens[2:])):
                     if tokens[i+2] == "e":
-                        tokens[i+2] = "+"
+                        tokens[i+2] = ","
                     elif tokens[i+2] == "pikulupu":
                         tokens[i+2] = "*"
                     elif tokens[i+2] == "tankipisi":
                         tokens[i+2] = "/"
-                js.append(tokens[0] + " = " + " ".join(tokens[2:]))
+                js.append(tokens[0] + " = safeAdd([" + " ".join(tokens[2:]) + "])")
                 lineNumbers.append([line_number, rawLine])
             elif tokens[1] == "lipokikine":
                 if '"' in tokens[0] or type(tokens[0]) == int:
                     raise Exception("pakala li lon toki nanpa "+Base10ToTokiPona(line_number)+"!\n"+"  ".join(line)+"\nni li ken poki taso: "+line[0])
                 for i in range(0,len(tokens[2:])):
                     if tokens[i+2] == "e":
-                        tokens[i+2] = "+"
+                        tokens[i+2] = ","
                     elif tokens[i+2] == "pikulupu":
                         tokens[i+2] = "*"
                     elif tokens[i+2] == "tankipisi":
                         tokens[i+2] = "/"
-                js.append(tokens[0] + " = safeAdd([" + tokens[0] + ", " + ", ".join(tokens[2:])+"])")
+                js.append(tokens[0] + " = safeAdd([" + tokens[0] + ", " + " ".join(tokens[2:])+"])")
                 lineNumbers.append([line_number, rawLine])
             elif tokens[1] == "likulupue":
                 if '"' in tokens[0] or type(tokens[0]) == int:
