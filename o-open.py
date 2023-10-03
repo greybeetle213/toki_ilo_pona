@@ -294,7 +294,7 @@ for line_number, line in enumerate(tokiilo):
                     raise Exception("pakala li lon toki nanpa "+Base10ToTokiPona(line_number)+"!\npoki pi toki ilo li ken ala lon pini pi nimi 'nanpa': "+"  ".join(line))
                 if checkNumber(line[wordNum+1]):
                     line[wordNum+1] = str(toki_pona_to_base_10(line[wordNum+1]))
-                firstParse[-1] += "["+line[wordNum+1]+"]"
+                firstParse[-1] += "["+line[wordNum+1].replace(" ", "")+"]"
                 wordNum += 1
             elif spacelessWord == "te": 
                 foundTo = False
